@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    display: grid;
+}
+.imgcontainer{
+    content: url("icons8-dark-mode-67.png");
+   grid-column: 3/4;
+   grid-row: 1/2;
+   margin-top: 2.5%;
+   justify-self: center;
+}
+.imgcontainerActive {
+    content: url("icons8-dark-mode-67(1).png");
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-top: 2.5%;
+    justify-self: center;
+}
+.container {
+    height: 100vh;
+    display:grid ;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 0.2f 1f 1f 1f 0.2f ;
+    background-color: #E0D4D4;
+}
+.containerActive { 
+    background-color: rgb(32, 30, 30);
+}
+.title {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 7rem;
+    text-anchor: middle;
+    justify-self: center;
+}
+.titleActive {
+    color: #E0D4D4;
+}
+.text {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-size: 3rem;
+    text-anchor: middle;
+    justify-self: center;
+}
+.textActive {
+color: #E0D4D4;
+}
+.buttons {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: center;
+}
+
+
