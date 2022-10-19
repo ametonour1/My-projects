@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  'Poppins', sans-serif;;
+}
+
+body {
+    background-image:linear-gradient( to left, #1D1919,#161515);
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr;
+    grid-template-columns: 0.200fr 1fr;
+}
+.container {
+    background-color: #B8C5BF;
+    grid-column: 1/3;
+    grid-row: 2/4;
+    z-index: 1;
+    margin: 0 15% 8% 15%;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows:  1fr 0.5fr 0.5fr 1fr 1fr;
+    grid-template-columns: 0.6fr 1fr 0.6fr;
+    
+}
+.leftbtn {
+    grid-row: 1/6;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: center;
+    margin-right: 50%;
+}
+.rightbtn {
+    grid-row: 1/6;
+    grid-column: 3/4;
+    justify-self: center;
+    align-self:center;
+    margin-left: 50%;
+}
+.image {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    margin-top: 4%;
+    clip-path: circle(50% at 50% 50%);
+}
+.name {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    justify-self: center;
+    text-anchor: middle;
+    align-self: center;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.customer {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    justify-self: center;
+    text-anchor: middle;
+    align-self: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: rgb( 229, 64, 11);
+}
+.review {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    justify-self: center;
+    text-anchor: middle;
+    align-self: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    
+}
+.quote {
+    grid-row: 5/6;
+    grid-column: 3/4;
+    align-self:center;
+    justify-self: end;
+    scale: 3;
+    margin-right: 10%;
+    margin-top: 5%;
+    font-weight: bold;
+    color: rgba(229, 64, 11, 0.78);
+    
+}
+.circle {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    z-index: 2;
+    background-color: rgba(229, 64, 11, 0.78);
+    width: 10rem;
+    height: 10rem;
+    border-radius:50%;
+    margin-left: 100%;
+    margin-top: 10%;
+    display: grid;
+    
+}
+.circle h1 {
+    color: #fff;
+    text-align: center;
+    text-anchor: middle;
+    font-size: 8rem;
+    font-weight: bold;
+   
+}
