@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(90deg, #191a2e, rgb(20, 27, 58));
+    display: grid;
+}
+.wrapper {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 1fr 0.6fr;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+}
+label {
+   color:  rgb(204, 232, 248)
+}
+.title {
+    text-anchor: middle;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: center;
+    font-size: 2.7rem;
+    justify-items: center;
+    align-items: center;
+    color: rgb(204, 232, 248);
+    margin-top: 2%;
+}
+.success {
+    background-color: #0c9ef3;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 2%;
+}
+.error {
+    background-color: #F30C9E;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 2%;
+}
+form {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    font-size: 1.4rem;
+    display: grid;
+}
+form input {
+    height: 2.2rem;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    font-size: 1.3rem;
+    padding-left: 4%;
+    background-color: rgb(204, 232, 248);
+}
+form input:focus {
+    border: solid rgb(6, 150, 233) 2px;
+}
+.main__btn {
+    height: 2.6rem;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(6, 150, 233);
+    margin-top: 4%;
+    color: rgb(204, 232, 248);
+    font-size: 1.2rem;
+
+}
+.main__btn:hover {
+    background-color: rgb(4, 157, 245);
+    opacity: 0.9;
+    scale: 1.02;
+}
+
+table {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    font-size: 1.4rem;
+    color: rgb(204, 232, 248);
+    
+}
+table thead tr th {
+    color: #F30C9E;
+}
+.delete {
+    color: red;
+    font-size: 1.5rem;
+}
